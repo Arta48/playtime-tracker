@@ -1,0 +1,17 @@
+{
+  "key.category.playtime-tracker.main": "Трекер времени",
+  "key.playtime.settings": "Открыть настройки",
+  "text.playtime.total": "Всего сыграно: %s",
+  "text.playtime.short": "Время: %s",
+  "text.playtime.none": "Нет данных",
+  "gui.playtime.on": "ВКЛ",
+  "gui.playtime.off": "ВЫКЛ",
+  "gui.playtime.editor": "Редактор HUD",
+  "gui.playtime.editor.title": "§lРЕДАКТОР HUD",
+  "gui.playtime.size": "§7РАЗМЕР:",
+  "gui.playtime.drag_hint": "Перетаскивайте HUD мышкой!",
+  "gui.playtime.hex_hint": "<-- Hex-код",
+  "gui.playtime.size_hint": "<-- Размер",
+  "playtime-tracker.milestone.title": "§6§l%s ЧАСОВ",
+  "playtime-tracker.milestone.message": "§8[§6★§8] §b§lДОСТИГНУТА ЦЕЛЬ: §e%s ЧАСОВ §b§lИГРЫ! §8[§6★§8]"
+}

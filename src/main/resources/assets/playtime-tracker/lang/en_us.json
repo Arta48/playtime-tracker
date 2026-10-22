@@ -1,0 +1,17 @@
+{
+  "key.category.playtime-tracker.main": "Playtime Tracker",
+  "key.playtime.settings": "Open Settings",
+  "text.playtime.total": "Total Playtime: %s",
+  "text.playtime.short": "Playtime: %s",
+  "text.playtime.none": "No Playtime Tracked",
+  "gui.playtime.on": "ON",
+  "gui.playtime.off": "OFF",
+  "gui.playtime.editor": "HUD Editor",
+  "gui.playtime.editor.title": "§lPLAYTIME EDITOR",
+  "gui.playtime.size": "§7SIZE:",
+  "gui.playtime.drag_hint": "Drag HUD with Mouse!",
+  "gui.playtime.hex_hint": "<-- Hex Code",
+  "gui.playtime.size_hint": "<-- Size",
+  "playtime-tracker.milestone.title": "§6§l%s HOURS",
+  "playtime-tracker.milestone.message": "§8[§6★§8] §b§lMILESTONE REACHED: §e%s HOURS §b§lPLAYTIME! §8[§6★§8]"
+}

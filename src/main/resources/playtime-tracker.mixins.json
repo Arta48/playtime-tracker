@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "net.thepir4te.playtime.mixin.client",
+  "compatibilityLevel": "${java}",
+  "client": [
+    "TitleScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

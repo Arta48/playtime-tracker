@@ -1,0 +1,50 @@
+plugins {
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+fabricApi {
+	configureDataGeneration {
+		client = true
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+}
+
+processResources {
+	inputs.property "version", project.version
+
+	filesMatching("fabric.mod.json") {
+		expand 'id': project.mod_id, 'version': project.version,
+				'name': project.mod_name, 'description': project.mod_description,
+				'author': project.mod_author, 'minecraft': project.minecraft_version,
+				'java': project.java_version
+	}
+
+	filesMatching("playtime-tracker.mixins.json") {
+		expand 'java': "JAVA_${project.java_version}"
+	}
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = targetCompatibility = project.java_version
+}
+
+jar {
+	inputs.property "archivesName", project.base.archivesName
+	from("LICENSE") {
+		rename { "${it}_${inputs.properties.archivesName}"}
+	}
+}

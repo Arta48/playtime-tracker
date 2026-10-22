@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "${description}",
+  "authors": [
+    "${author}"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/pir4tes-playtime-tracker"
+  },
+  "license": "MIT",
+  "icon": "assets/playtime-tracker/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.thepir4te.playtime.PlaytimeTrackerClient"
+    ]
+  },
+  "mixins": [
+    "playtime-tracker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": ">=${minecraft}",
+    "java": ">=${java}",
+    "fabric-api": "*"
+  }
+}
